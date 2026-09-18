@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WINE — Minecraft сервер</title>
+  <meta name="description" content="WINE — ванильный Minecraft сервер для выживания, творчества и друзей." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="grain"></div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="WINE — на главную">
+      <span class="brand-mark">W</span>
+      <span>WINE</span>
+    </a>
+    <nav class="nav-links" aria-label="Основная навигация">
+      <a href="#about">ⓘ &nbsp;О сервере</a>
+      <a href="#selection">▤ &nbsp;Возможности</a>
+      <a href="#events">⌁ &nbsp;Статистика</a>
+      <a href="#journal">▧ &nbsp;Новости</a>
+      <a href="#community">♧ &nbsp;Комьюнити</a>
+      <a href="#map">⌖ &nbsp;Карта</a>
+    </nav>
+    <button class="outline-button auth-trigger">Войти</button>
+    <button class="menu-button" aria-label="Открыть меню">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" id="about">
+      <div class="hero-copy">
+        <p class="eyebrow">1.21.4 · Java Edition</p>
+        <h1>WINE</h1>
+        <p class="hero-text">Уникальный ванильный сервер Майнкрафт. Здесь игроки объединяются для выживания и
+          творчества. Присоединяйтесь к нам!</p>
+        <div class="hero-actions">
+          <button class="primary-button" data-scroll="#membership">Авторизоваться</button>
+          <button class="text-button" data-scroll="#selection">Подробнее</button>
+        </div>
+        <div class="server-panel">
+          <div class="server-main">
+            <div class="server-label">♢ &nbsp; АДРЕС СЕРВЕРА</div>
+            <div class="ip-row"><strong id="server-ip">winnsmp.minerent.io</strong><button class="copy-ip"
+                type="button">▣
+                &nbsp; Скопировать IP</button></div>
+          </div>
+          <div class="online-box"><span><i></i> Сейчас онлайн</span><strong>0 <small>/ 500</small></strong></div>
+          <div class="server-meta"><span>⌁ &nbsp;1.21.4 · пинг - 0</span><span>♧ &nbsp; Открыто для всех</span><button
+              data-scroll="#events">▥ &nbsp; Статистика</button><button data-scroll="#map">⌖ &nbsp; Карта</button></div>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-label="Иллюстрация персонажа Minecraft">
+        <div class="halo"></div>
+        <div class="grape grape-one"></div>
+        <div class="grape grape-two"></div>
+        <div class="vine-line"></div>
+        <div class="mc-character">
+          <div class="mc-head"><span class="eye eye-left"></span><span class="eye eye-right"></span><span
+              class="hair"></span></div>
+          <div class="mc-body"></div>
+          <div class="mc-arm arm-left"></div>
+          <div class="mc-arm arm-right"></div>
+          <div class="mc-leg leg-left"></div>
+          <div class="mc-leg leg-right"></div>
+        </div>
+        <div class="art-caption"><span>WINE / 01</span><span>выживание · vanilla</span></div>
+      </div>
+    </section>
+
+    <section class="feature-strip" id="selection">
+      <div><span class="feature-number">01</span><strong>Честное выживание</strong>
+        <p>Ванильный мир без pay-to-win и лишнего шума.</p>
+      </div>
+      <div><span class="feature-number">02</span><strong>Живое комьюнити</strong>
+        <p>Стройте города, заводите друзей и пишите свою историю.</p>
+      </div>
+      <div><span class="feature-number">03</span><strong>Большой мир</strong>
+        <p>Карта, экономика, события и место для каждого игрока.</p>
+      </div>
+    </section>
+
+    <section class="event-section" id="events">
+      <div>
+        <p class="eyebrow">ближайшее событие</p>
+        <h2>Ночная<br /><em>стройка</em></h2>
+      </div>
+      <div class="event-info">
+        <p>Каждую пятницу · 20:00</p>
+        <p>Координаты появятся в Discord</p>
+        <button class="round-arrow" data-scroll="#membership" aria-label="Забронировать место">↗</button>
+      </div>
+    </section>
+
+    <section class="membership" id="membership">
+      <div>
+        <p class="eyebrow">маленький шаг</p>
+        <h2>Твой новый<br /><em>дом ждёт.</em></h2>
+      </div>
+      <div class="membership-form">
+        <p>Оставьте почту — пришлём IP сервера, новости и приглашение в Discord.</p>
+        <form><input type="email" placeholder="Ваш e-mail" aria-label="Ваш e-mail" required /><button
+            type="submit">Получить IP</button></form><small class="form-message" role="status"></small>
+      </div>
+    </section>
+  </main>
+  <footer id="journal"><span>© 2026 WINE server</span><span>discord · telegram · контакты</span></footer>
+
+  <div class="auth-overlay" aria-hidden="true">
+    <section class="auth-modal" role="dialog" aria-modal="true" aria-labelledby="auth-title">
+      <button class="modal-close" aria-label="Закрыть">×</button>
+      <div class="auth-modal-content">
+        <span class="modal-mark">W</span>
+        <h2 id="auth-title">Вход в аккаунт</h2>
+        <p class="auth-subtitle">Авторизуйтесь через Discord, чтобы попасть в свой профиль WINE.</p>
+        <label class="consent">
+          <input type="checkbox" id="consent" />
+          <span class="checkmark"></span>
+          <span>Я принимаю <a href="#journal">оферту</a> и <a href="#journal">политику конфиденциальности</a>, даю
+            согласие на обработку персональных данных.</span>
+        </label>
+        <button class="discord-button" disabled>◉ <span>Войти через Discord</span></button>
+        <p class="auth-note">Без паролей. Ваш Discord-аккаунт останется в безопасности.</p>
+      </div>
+    </section>
+  </div>
+
+  <div class="profile-drawer" aria-hidden="true">
+    <section class="profile-card" role="dialog" aria-modal="true" aria-labelledby="profile-title">
+      <button class="profile-close" aria-label="Закрыть">×</button>
+      <div class="profile-cover"></div>
+      <div class="profile-body">
+        <div class="profile-avatar">W</div>
+        <div class="profile-heading">
+          <div>
+            <p class="profile-kicker">Профиль игрока</p>
+            <h2 id="profile-title">WINEPlayer</h2><span class="online-status"><i></i> Сейчас онлайн</span>
+          </div><span class="discord-badge">Discord</span>
+        </div>
+        <div class="profile-stats">
+          <div><strong>38</strong><span>часов в игре</span></div>
+          <div><strong>12</strong><span>построек</span></div>
+          <div><strong>#0</strong><span>на сервере</span></div>
+        </div>
+        <div class="profile-links"><a href="#selection">Мои достижения <span>→</span></a><a href="#map">Открыть карту
+            <span>↗</span></a></div>
+        <button class="logout-button">Выйти из аккаунта</button>
+      </div>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
